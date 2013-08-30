@@ -22,7 +22,7 @@ public class EspetaculoTest {
 		Espetaculo show = new Espetaculo();
 		List<Sessao> sessoes= show.criaSessoes(inicio, fim, hora, diaria);
 		
-		Assert.assertEquals(2, sessoes.size());
+		Assert.assertEquals(1, sessoes.size());
 		Assert.assertEquals(sessoes.get(0).getEspetaculo(),show);
 		Assert.assertEquals(sessoes.get(0).getInicio(),inicio.toDateTime(hora));
 		
